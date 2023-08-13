@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Account</title>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="nav">
+    <ul>
+      <li class="logo">GrainsMart</li>
+      <li class="active"><a href="account.jsp">Account</a></li>
+      <li><a href="SellGrain.jsp">Sell Grains</a></li>
+      
+      <li><a href="Grains.jsp">Order Grains</a></li>
+      <li><a  href="AboutUs.html">About Us</a></li>
+      <li><a href="index.jsp">Home</a></li>
+    </ul>
+  </div>
+  
+<div class="popup" id="popup">
+
+
+   <!--user login popup-->
+
+   <div class="login" id="login-class">
+   <form action="login.jsp" method="post">
+  
+   <div class="form">
+   
+     <h2>Log in</h2>
+      <div class="form-element">
+     <label for="login_type">Choose a Login Type:</label>
+  <select name="login_type" id="login_type" >
+  <option value="1">Customer</option>
+  <option value="2">Farmer</option>
+  </select></div>
+  
+     <div class="form-element">
+       <label for="user_name">Username</label>
+       <input type="text" id="user_name" name="user_name" required placeholder="Enter Username">
+
+     </div>
+     <div class="form-element">
+       <label for="user_password">Password</label>
+       <input type="password" id="user_password"name="user_password"  required placeholder="Enter password">
+     </div>
+
+     <div class="form-element">
+     
+       <button name="user_login">Login</button>
+     </div>
+     <div class="register-btn">
+       <p>New User Customer?
+       <a href="register.jsp"style="text-decoration:none;color:red;">
+         <b>Register</b></a></p>
+     </div>
+        
+   </div>
+   </form>
+</div>
+
+  
+    </div>
+</body>
+ 
+</html>

@@ -1,0 +1,55 @@
+.dashboard{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    padding: 20px;
+    padding-right: 40px;
+   /* background: #ffffff;*/
+  /* background: #ff91d1;*/
+  background: rgb(124,104,230);
+background: linear-gradient(90deg, rgba(124,104,230,1) 0%, rgba(223,138,237,1) 52%);
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    
+   
+}
+.dashboard .dash .row{
+    display: flex;
+    padding: 0 4em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.dashboard .dash .row .ref .element { padding: 1%;
+text-align: center;
+
+box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+width: 160px;
+height: 100px;
+/*border:2px solid black;*/
+border-radius: 10px;
+cursor: pointer;
+background: rgb(241,210,108);
+background: linear-gradient(90deg, rgba(241,210,108,1) 0%, rgba(237,138,138,0.9923319669664741) 52%);
+color: #000000;
+/*opacity: 0.5;*/
+}
+.dashboard .dash .row .ref .element:hover{
+    opacity: 0.6; 
+}
+.dashboard .dash .row .ref .element p{
+    font-size: 25px;
+    text-decoration: none;
+    
+}
+.dashboard .dash .row button{
+    padding:0px;
+    border-radius:10px;
+    border:0px;
+  }
+  .dashboard .dash .row .ref a:link{
+    text-decoration: none;
+ }

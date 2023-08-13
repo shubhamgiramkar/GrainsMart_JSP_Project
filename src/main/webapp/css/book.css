@@ -1,0 +1,35 @@
+.profile{
+   
+  font-size:17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 25%;
+    padding: 20px;
+    padding-right: 40px;
+   /* background: #ffffff;*/
+  /* background: #ff91d1;*/
+  background: rgb(124,104,230);
+background: linear-gradient(90deg, rgba(124,104,230,1) 0%, rgba(223,138,237,1) 52%);
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    
+   
+}
+.profile h2{
+    text-align: center;}
+ .profile .userprofile button{
+        margin-left: 25%;
+      width:50%;
+      height:29px;
+    }
+    .form-element input{
+ margin-top: 5px;
+ display: block;
+ width: 100%;
+ padding: 10px;
+ outline: none;
+ border: 1px solid #aaa;
+ border-radius: 5px;   
+}

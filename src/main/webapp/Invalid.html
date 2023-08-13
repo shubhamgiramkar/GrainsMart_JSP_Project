@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.sorry{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    padding: 20px;
+    /*padding-right: 40px;*/
+    background: #ffffff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    
+    }
+.sorry img{
+    margin-left: 20%;
+    width: 60%;
+    height: 50%;
+}
+.sorry h3{
+    text-align: center;
+    color: #e84118;
+}
+.sorry button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: rgb(130, 243, 96);
+    color: #050202;
+    border-radius: 10px;
+    cursor: pointer;
+}</style>
+</head>
+<body>
+<form action="account.jsp" method="post">
+<div class="sorry" id="ssorry">
+       <div class="img">
+         <img src="css/img/oops.jpg" alt="">
+       </div>
+       <div class="sorry-para">
+         <h3>Invalid Email And Password</h3>
+       </div>
+       <button >OK</button>
+     </div>
+     </form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+.box{
+	border:2px solid black;
+	width:100%;
+}
+.box .form-element{
+	font-size:18px;
+}
+.box .form-element input[type=submit]{
+	margin-left:25%;
+}

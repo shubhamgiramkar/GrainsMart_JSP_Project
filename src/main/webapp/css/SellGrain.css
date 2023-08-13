@@ -1,0 +1,103 @@
+@charset "ISO-8859-1";
+.nav ul {
+    list-style-type: none;
+    margin: -8px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  .nav .active{
+   color: rgb(87, 216, 255);
+  }
+  .nav .logo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: aquamarine;}
+  .nav li a:hover {
+  color: rgb(87, 216, 255);
+  }
+  /* display navigation in big screen mode */
+  @media (min-width: 944px){
+    .nav li a { font-size: larger;
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 30px;
+        text-decoration: none;}
+    .nav .logo{
+            float: left;
+           }
+   .nav li {
+                float:right;
+        }
+}
+/* display navigation in tab and mobile mode */
+@media (max-width: 944px){
+    .nav li a {
+         font-size: larger;
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 13px 30px;
+        text-decoration: none;}
+    .nav .logo{
+            float: left;
+           }
+     .nav .account{
+         margin-top: 8%;
+     }     
+    .nav ul{ 
+            width: 100%;
+        }
+}
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    padding: 20px;
+    padding-right: 40px;
+   /* background: #ffffff;*/
+   background: #61ce79;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.popup .form h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 20px;
+}
+.popup .form .form-element{
+    margin: 12px 0px;
+
+}
+
+.popup .form .form-element label{
+    font-size: 17px;
+    color: #222;
+}
+.popup .form .form-element input{
+ margin-top: 5px;
+ display: block;
+ width: 100%;
+ padding: 10px;
+ outline: none;
+ border: 1px solid #aaa;
+ border-radius: 5px;   
+}
+.popup .form .form-element  button{
+    margin-left:25%;
+    width: 50%;
+    height: 40px;
+    border: none;
+    background: #222;
+    color: #f5f5f5;
+    font-size:17px;
+    border-radius: 10px;
+    cursor: pointer;
+  
+}
+

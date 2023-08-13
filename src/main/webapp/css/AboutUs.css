@@ -1,0 +1,183 @@
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  .nav .active{
+   color: rgb(87, 216, 255);
+  }
+  .nav .logo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: aquamarine;}
+  .nav li a:hover {
+  color: rgb(87, 216, 255);
+  }
+  /* display navigation in big screen mode */
+  @media (min-width: 944px){
+    .nav li a { font-size: larger;
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 30px;
+        text-decoration: none;}
+    .nav .logo{
+            float: left;
+           }
+   .nav li {
+                float:right;
+        }
+}
+/* display navigation in tab and mobile mode */
+@media (max-width: 944px){
+    .nav li a {
+         font-size: larger;
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 13px 30px;
+        text-decoration: none;}
+    .nav .logo{
+            float: left;
+           }
+     .nav .account{
+         margin-top: 8%;
+     }     
+    .nav ul{ 
+            width: 100%;
+        }
+}
+.about{
+    width: 100%;
+}
+
+.parag{text-align: center;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+
+}
+
+@media (min-width: 944px){
+/*.container{display: flex;
+  
+}
+.container .parag{flex: 1;
+
+}
+.container .wedding-planner{
+    flex: 1;
+}*/
+
+.wedding-planner{
+    height:40%;
+    width: 40%;
+   
+}
+
+
+.parag p{
+    font-family: cursive;
+    font-size: 20px;
+}
+.parag h1{
+    font-family: cursive;
+    font-size: 30px;
+}}
+
+
+
+@media(max-width:944px){
+    .wedding-planner{
+        height:50%;
+        width: 50%;
+        margin-left: 50%;
+       
+    }
+    .parag p{
+        font-family: cursive;
+        font-size: 15px;
+    }
+    .parag h1{
+        font-family: cursive;
+        font-size: 25px;
+}
+    
+    }
+
+
+    /*-------------------------------------------------------------------------------------------------------*/
+    /*CODE FOR FOOTER*/
+    .footer{
+        background: #000;
+        color:#8a8a8a;
+        font-size: 14px;
+        padding:16px 0 20px;
+        cursor:pointer;
+        text-align: center;
+    }
+    .footer .f-title{
+        padding: 20px 50px;
+        color: #eee;
+    }
+    .container .f-desc a{
+      font-size: 18px;
+        text-decoration: none;
+        color: #8a8a8a;;
+    }
+    .container .f-desc a:hover{
+        color: rgb(134, 6, 6);
+    }
+    .container .f-desc li{
+        padding: 5px 0;
+        list-style-type: none;
+        display: inline-block;
+        padding: 0 15px;
+    }
+    .icon{
+        width: 100%;
+        clear: both;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .icon a{
+      font-size: 24px;
+        height: 60px;
+        width: 60px;
+        background: whitesmoke;
+        border-radius: 50px;
+       text-align: center;
+        line-height: 60px;
+        margin: 10px;
+    }
+    .icon a i{
+        transition: all 0.3s linear;
+    }
+    .icon a i:hover{
+       transform:scale(1.4);
+    }
+    .fa-facebook{
+        color:#0097e6;
+    }
+    .fa-instagram{
+        color:#e84393;
+    }
+    .fa-linkedin{
+        color:#0097e6;
+    }
+    .fa-youtube{
+        color:#e84118;
+    }
+    .footer hr{
+        border: none;
+        background: #b5b5b5;
+        height: 1px;
+        margin: 20px 0;
+    }
+    
+  
+

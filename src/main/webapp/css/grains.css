@@ -1,0 +1,329 @@
+body{
+  /*background-image: url(event8.jpg);
+  background-size:cover;*/
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  }
+  
+  
+  .nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    .nav .active{
+     color: rgb(87, 216, 255);
+    }
+    .nav .logo{
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 40px;
+      color: aquamarine;}
+    .nav li a:hover {
+    color: rgb(87, 216, 255);
+    }
+    .img{
+      width: 100%;
+      
+    }
+    /* display navigation in big screen mode */
+    @media (min-width: 944px){
+      .nav li a { font-size: larger;
+          display: block;
+          color: rgb(255, 255, 255);
+          text-align: center;
+          padding: 14px 30px;
+          text-decoration: none;}
+      .nav .logo{
+              float: left;
+             }
+      .nav li {
+                  float:right;
+          }
+  }
+  /* display navigation in tab and mobile mode */
+  @media (max-width: 944px){
+      .nav li a {
+           font-size: larger;
+          display: block;
+          color: rgb(255, 255, 255);
+          text-align: center;
+          padding: 13px 30px;
+          text-decoration: none;}
+      .nav .logo{
+              float: left;
+             }
+       .nav .account{
+           margin-top: 8%;
+       }     
+      .nav ul{ 
+              width: 100%;
+          }
+  }
+   body .background{
+       
+       
+       width: 100%;
+   }
+
+
+   .corh{
+       text-align: center;
+       flex: 0%;
+       margin-top: 4%;
+   }
+
+
+
+   
+
+  /*card view you tube*/
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  /*body {
+    background-color: #151320;
+  }*/
+  section {
+    /*height: 100vh;*/
+    height: 30vh;
+    display: flex;
+    padding: 0 4em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container {
+    perspective: 1000px;
+   /* height: 28vh;*/
+   height: 33vh;
+    width: 100%;
+   cursor: pointer;
+    margin-top: 5px;
+  }
+  .card {
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease;
+  }
+  .front,
+  .back {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.4em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+  }
+  .container .back button{
+    width: 200px;
+    height: 40px;
+   /* background: linear-gradient(to right, #a246ef, #6523fe);*/
+   background-image: linear-gradient(rgb(26, 137, 3), rgba(37, 114, 34, 0.61));
+    border: none;
+    font-size: 20px;
+    color: white;
+    /*cursor:hand;*/
+    
+  }
+  .front {
+      background-image: linear-gradient(rgb(72, 248, 190), rgb(24, 139, 1));
+    /*background: linear-gradient(to right, #a246ef, #6523fe);*/
+    /*background-image: url(cor1.jpg);
+    background-size: 100%;*/
+  }
+  .front img {
+    width:15em;
+    border-radius:10px;
+    
+
+  }
+  .content {
+    transform: translateZ(60px);
+  }
+  .content h3 {
+    font-size: 22px;
+    margin-top: 1em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+  .content p {
+    font-size: 14px;
+    line-height: 2em;
+    letter-spacing: 0.01em;
+    padding: 0 3em;
+  }
+  .back {
+    background-color: #28253a;
+    transform: rotateX(180deg);
+  }
+  .container:hover .card {
+    transform: rotateX(180deg);
+  }
+  @media screen and (min-width: 992px) {
+    .corh,.birthh,.wedh,.footer{
+      text-align: center;
+      flex: 0%;
+      margin-top: 5%;
+  }
+    section {
+      padding: 0 1em;
+    }
+    .container {
+      flex-basis: 0 0 33.33%;
+      max-width: 33.33%;
+      padding: 0 1.5em;
+    }
+  }
+
+ 
+  @media screen and (max-width:991px) 
+  {
+    .wedh,.birthh,.footer{
+      text-align: center;
+      flex: 0%;
+      margin-top: 65%;
+  }
+    
+  }
+
+
+  @media screen and (max-width:860px) 
+  {
+    .wedh,.birthh,.footer{
+      text-align: center;
+      flex: 0%;
+      margin-top: 75%;
+  }
+    
+  }
+
+  @media screen and (max-width:760px) 
+  {
+    .wedh,.birthh,.footer{
+      text-align: center;
+      flex: 0%;
+      margin-top: 85%;
+  }
+    
+  }
+  @media screen and (max-width:660px) 
+  {
+    .wedh,.birthh,.footer{
+      text-align: center;
+      flex: 0%;
+      margin-top: 100%;
+  }
+    
+  }
+  @media screen and (max-width:560px) 
+  {
+    .wedh,.birthh,.footer{
+      text-align: center;
+      flex: 0%;
+      margin-top: 130%;
+  }
+    
+  }
+  @media screen and (max-width:500px) 
+  {
+    .wedh,.birthh,.footer{
+      text-align: center;
+      flex: 0%;
+      margin-top: 125%;
+  }
+    
+  }
+  @media screen and (max-width:450px) 
+  {
+    .wedh,.birthh,.footer{
+      text-align: center;
+      flex: 0%;
+      margin-top: 180%;
+  }
+    
+  }
+
+
+
+   /*-------------------------------------------------------------------------------------------------------*/
+    /*CODE FOR FOOTER*/
+    .footer{
+      background: #000;
+      color:#8a8a8a;
+      font-size: 14px;
+      padding:16px 0 20px;
+      cursor:pointer;
+      text-align: center;
+  }
+  .footer .f-title{
+      padding: 20px 50px;
+      color: #eee;
+  }
+  .container1 .f-desc a{
+    font-size: 18px;
+      text-decoration: none;
+      color: #8a8a8a;;
+  }
+  .container1 .f-desc a:hover{
+      color: rgb(134, 6, 6);
+  }
+  .container1 .f-desc li{
+      padding: 5px 0;
+      list-style-type: none;
+      display: inline-block;
+      padding: 0 15px;
+  }
+  .icon{
+      width: 100%;
+      clear: both;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .container1 .icon a{
+    font-size: 24px;
+      height: 60px;
+      width: 60px;
+      background: whitesmoke;
+      border-radius: 50px;
+     text-align: center;
+      line-height: 60px;
+      margin: 10px;
+  }
+  .icon a i{
+      transition: all 0.3s linear;
+  }
+  .icon a i:hover{
+     transform:scale(1.4);
+  }
+  .fa-facebook{
+      color:#0097e6;
+  }
+  .fa-instagram{
+      color:#e84393;
+  }
+  .fa-linkedin{
+      color:#0097e6;
+  }
+  .fa-youtube{
+      color:#e84118;
+  }
+  .footer hr{
+      border: none;
+      background: #b5b5b5;
+      height: 1px;
+      margin: 20px 0;
+  }
+  
